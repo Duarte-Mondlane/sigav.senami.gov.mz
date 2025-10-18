@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+  font-size: 16px; 
+}
+header{
+    background-color: #f4f5f8;
+}
+
+nav{
+    display: flex;
+    padding: 0 1.25rem;
+    align-items: center;
+}
+
+.headup{
+   justify-content: space-between;
+}
+
+.headup ul, .headdown ul{
+    display: flex;
+    margin-top: 0.3125rem;
+} 
+
+.headdown a, .headup a{
+     text-decoration: none;
+     color: black;
+     align-items: center;
+     font-size: 1rem;
+     cursor: pointer;
+}
+
+.headup li, .headdown li{
+    margin-left: 0.625rem;
+    list-style: none;
+}
+
+#conect a{
+    color: blue;
+    font-size: 0.875rem;
+}
+
+.headup button{
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.headup button:hover{
+    background-color: black;
+}
+
+.headup select{
+    padding: 0.3125rem 0.625rem;
+    border: none;
+    border-radius: 0.3125rem;
+}
+
+#linha {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.375rem;
+}
+
+#select{
+    background-color:#dde2e8;
+}
+
+nav li, nav a{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul{
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    gap: 1.25rem;
+}
+
+.container{
+    max-width: 80%;
+    margin: 1.25rem auto;
+    margin-top: 1.25rem;
+    padding: 1.875rem;
+    background: #fff;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
+}
+
+div h6{
+    text-align: center;
+    background-color: #006af5;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem;
+}
+
+h6{
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.125rem;
+    color: hsl(215.56deg 35.06% 15.1%);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+label{
+    color: hsl(213.33deg 12.33% 42.94%);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+label:hover{
+    color: black;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media (max-width: 1000px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1{
+        font-size: 1rem;
+    }
+    html {
+  font-size: 14px; 
+}
+  .documentos ul{
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+}
+
+@media (max-width: 768px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .provincia {
+      grid-column: span 1 !important;
+    }
+    h1{
+        font-size: 1.125rem;
+    }
+    html {
+  font-size: 12px; 
+}
+.documentos ul{
+                grid-template-columns: repeat(1, 1fr);
+    
+            }
+
+}
+
+.radio{
+    flex-direction: row;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.section p{
+    font-size: 0.875rem;
+    color: #555;
+}
+
+hr {
+    margin: 0.5rem 0;
+    background-color: #E5E8EC;
+    opacity: calc(0.5);
+}
+
+input, select{
+    background-color: #E5E8EC;
+    padding: 0.5rem 0.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+}
+
+.cidade, .bairro, .provincia{
+    grid-column: span 2;
+    padding: 0.5rem;
+}
+
+.section .button{
+    display: inline-block;
+    margin: 0 0.25rem;
+}
+
+.buttons button{
+   padding: 0.5rem;
+   font-size: 1rem;
+   font-weight: 500;
+   border: none;
+   border-radius: 0.3125rem;
+}
+
+.cancelar button{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.limpar button{
+    color: blue;
+}
+
+.submeter button{
+    background-color: hsl(212deg 14.02% 79.02%);
+    color: white;
+    font-weight: 800;
+}
+ .home_conteiner p{
+        text-align: center;
+       }   
+       .home_logo img{
+        display: flex;
+        width: 150px;
+        height: 100px;
+        align-items: center;
+        justify-self: center;
+        margin: 1rem auto;
+       }  
+       #instrucoes ul{
+        
+        display: flex;
+        margin: 0px 16px;
+        padding: 8px;
+    
+       }
+       #instrucoes ul li{
+        list-style: none;
+        text-align: center;
+       }
+       #name_servico{
+        font-weight: bold;
+        font-size: 22px;
+        color:hsl(0deg 78.5% 41.96%);
+        text-transform: uppercase;
+        padding: 0.875rem 0px 1rem 0px;
+       }
+       #name{
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+       }
+         #instrucao{
+          font-size: 22px;
+          color: #006af5;
+          padding: 12px ;
+          text-transform: uppercase;
+          font-weight: 600;
+         }
+        #siga{
+            font-size: 16px;
+            color: #9F9F9F;
+            margin: 8px 0px 40px;
+            text-transform: uppercase;
+        }
+        .documentos {
+            margin: 16px;
+        }
+        .documentos ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+
+        }
+        
+
+    .documentos ul li{
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            background-color: #006af5;
+        }
+        .documentos ul li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+           
+        }
