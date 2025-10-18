@@ -57,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (next && next.classList.contains("error-message")) {
         next.remove();
         field.style.borderColor = "#ccc";
+        git init
+
+
       }
     });
   });
