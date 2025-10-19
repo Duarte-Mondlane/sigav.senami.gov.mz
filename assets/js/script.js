@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // quando sair do campo (blur)
     field.addEventListener("blur", function () {
       if (field.value.trim() === "") {
-        mostrarErro(field, "⚠ Este campo é obrigatório.");
+        mostrarErro(field, "⚠ Campo obrigatório / Required field / Champ obligatoire");
       } else {
         limparErro(field);
       }
